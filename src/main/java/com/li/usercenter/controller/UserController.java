@@ -8,6 +8,7 @@ import com.li.usercenter.model.VO.SearchUserResult;
 import com.li.usercenter.model.VO.UserVO;
 import com.li.usercenter.model.domain.User;
 import com.li.usercenter.model.request.*;
+import com.li.usercenter.service.UserService;
 import com.li.usercenter.service.impl.UserServiceImpl;
 import com.li.usercenter.utils.ResultUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -22,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserController {
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService;
 
     /**
      * 用户注册

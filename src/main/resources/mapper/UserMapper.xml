@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.li.UserCenter.mapper.UserMapper">
+<mapper namespace="com.li.usercenter.mapper.UserMapper">
 
     <resultMap id="BaseResultMap" type="com.li.usercenter.model.domain.User">
             <id property="id" column="id" jdbcType="BIGINT"/>

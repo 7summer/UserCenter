@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 "v1.0", //版本
                 "", //团队url
                 // 联系信息
-                new Contact("quake", "https://www.baidu.com/", "clear_poem@163.com"),
+                new Contact("quake", "https://www.baidu.com/", "1234@qq.com"),
                 "Apache 2.0",
                 "http://www.apache.org/licenses/LICENSE-2.0",
                 new ArrayList<VendorExtension>()
