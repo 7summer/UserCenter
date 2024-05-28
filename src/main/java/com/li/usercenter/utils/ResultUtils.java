@@ -4,7 +4,6 @@ import com.li.usercenter.common.BaseResponse;
 import com.li.usercenter.common.ErrorCode;
 
 public class ResultUtils {
-
     public static <T> BaseResponse<T> success(T data) {
         return new BaseResponse<>(0, data, "ok");
     }

@@ -21,7 +21,7 @@ public class SwaggerConfig {
                 .apiInfo(myApiInfo())
                 .select()
                 // 接口扫描包
-                .apis(RequestHandlerSelectors.basePackage("com.li.UserCenter.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.li.usercenter.controller"))
                 .build();
     }
 

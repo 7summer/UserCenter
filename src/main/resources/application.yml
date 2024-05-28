@@ -15,7 +15,7 @@ spring:
 #      schema-locations: classpath:db/schema-h2.sql
 #      data-locations: classpath:db/data-h2.sql
 server:
-  port: 8081
+  port: 8080
 
 mybatis-plus:
   configuration:
