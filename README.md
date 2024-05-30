@@ -10,12 +10,15 @@
 
 
 
+
+
 # 数据库表设计
 
 |   字段名    |       字段描述       |   类型   |
 | :---------: | :------------------: | :------: |
 |     id      |         主键         |   int    |
 |  username   |         昵称         | varchar  |
+| description |       用户描述       |          |
 |  avatarUrl  |         头像         | varchar  |
 | userAccount |         账号         | varchar  |
 |  password   |         密码         | varchar  |
@@ -59,13 +62,11 @@
 
 ## 用户注册
 
-
-
 ![image-20240528191933140](用户中心-github.assets/image-20240528191933140.png)
 
 ## 更新用户信息
 
-![image-20240528192626588](用户中心-github.assets/image-20240528192626588.png)
+![image-20240530111543373](用户中心-github.assets/image-20240530111543373.png)
 
 
 
