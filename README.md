@@ -13,19 +13,21 @@
 
 
 # 数据库表设计
+## 用户表
 
-|   字段名    |       字段描述       |   类型   |
-| :---------: | :------------------: | :------: |
-|     id      |         主键         |   int    |
-|  username   |         昵称         | varchar  |
-| description |       用户描述       |          |
-|  avatarUrl  |         头像         | varchar  |
-| userAccount |         账号         | varchar  |
-|  password   |         密码         | varchar  |
-| userStatus  |         状态         |   int    |
-| createTime  |       创建时间       | datetime |
-| updateTime  |       更新时间       | datetime |
-|  isDelete   | 是否删除（逻辑删除） | tinyint  |
+|    字段名    |             字段描述             |   类型   |
+| :----------: | :------------------------------: | :------: |
+|      id      |               主键               |   int    |
+|   username   |               昵称               | varchar  |
+| description  |             用户描述             | varchar  |
+|  avatarUrl   |               头像               | varchar  |
+| userAccount  |               账号               | varchar  |
+| userPassword |               密码               | varchar  |
+|  userStatus  |             用户状态             |   int    |
+|   userRole   | 用户角色（0-普通用户，1-管理员） | tinyint  |
+|  createTime  |             创建时间             | datetime |
+|  updateTime  |             更新时间             | datetime |
+|   isDelete   |       是否删除（逻辑删除）       | tinyint  |
 
 ## *字段简介*
 
