@@ -12,6 +12,7 @@ public class AdminUpdateUserRequest implements Serializable {
     public static final long serialVersionUID = 425313276L;
     private Long id;
     private String username;
+    private String description;
     private String avatarUrl;
     private String email;
     private String userPassword;

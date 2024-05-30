@@ -230,12 +230,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户编号异常");
         }
 
-        // 密码未加密的user对象
+        // 更新user
         User updateUser = getUpdateUser(updateUserRequest);
-        // 密码加密的user对象
-        User encryUser = getEncryptUser(updateUser);
 
-        return userMapper.updateById(encryUser) > 0;
+        return userMapper.updateById(updateUser) > 0;
     }
 
     /**
@@ -419,6 +417,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         }
         updateUser.setUsername(username);
 
+        String description = updateUserRequest.getDescription();
+        if (StringUtils.isEmpty(description) || description.length() >= 255) {
+            description = null;
+        }
+        updateUser.setDescription(description);
+
+
         String avatarUrl = updateUserRequest.getAvatarUrl();
         if (StringUtils.isEmpty(avatarUrl) || avatarUrl.length() >= 1024) {
             avatarUrl = null;
@@ -458,6 +463,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             username = null;
         }
         updateUser.setUsername(username);
+
+        String description = updateInfoRequest.getDescription();
+        if (StringUtils.isEmpty(description) || description.length() >= 255) {
+            description = null;
+        }
+        updateUser.setDescription(description);
 
         String email = updateInfoRequest.getEmail();
         if (StringUtils.isEmpty(email) || email.length() >= 255) {

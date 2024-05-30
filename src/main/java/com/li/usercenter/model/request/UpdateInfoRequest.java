@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class UpdateInfoRequest implements Serializable {
     private Long id;
     private String username;
+    private String description;
     private String avatarUrl;
     private String email;
 }
